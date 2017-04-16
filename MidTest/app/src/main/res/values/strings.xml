@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListViewDemo</string>
+    <string name="title_result_activity">ResultActivity</string>
+    <string name="title_addmember_activity">AddMemberActivity</string>
+    <string name="tvTitle">Membership Information</string>
+    <string name="btAdd">新增</string>
+    <string name="tvShowName">姓名:</string>
+    <string name="tvShowAge">年齡:</string>
+    <string name="tvShowSex">性別:</string>
+    <string name="tvShowMajor">系別:</string>
+    <string name="btBack">回主選單</string>
+    <string name="tvAddDiagram">新增畫面</string>
+    <string name="tvAddTitile">新增資料</string>
+</resources>
