@@ -50,7 +50,8 @@
         android:layout_alignBaseline="@+id/tvShowName"
         android:layout_alignBottom="@+id/tvShowName"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        />
 
     <EditText
         android:layout_height="wrap_content"
@@ -61,7 +62,8 @@
         android:layout_alignBaseline="@+id/tvShowAge"
         android:layout_alignBottom="@+id/tvShowAge"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        />
 
     <EditText
         android:layout_height="wrap_content"
@@ -83,7 +85,8 @@
         android:layout_alignBaseline="@+id/tvShowMajor"
         android:layout_alignBottom="@+id/tvShowMajor"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        />
 
     <Button
         android:text="@string/btAdd"

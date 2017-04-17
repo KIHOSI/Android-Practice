@@ -8,12 +8,9 @@ import java.util.List;
  */
 
 public class MyMemberlist {
-    public static List<Member> memberList  = new ArrayList();;
+    public static List<Member> memberList  = new ArrayList();
     public static int initialFlag=0; //防止按上一步跳回主頁面 會多新增一次
 
-    public static List<Member> getMemberList(){return memberList;}
-
-    public static int getMemberListNum(){return memberList.size();} //得到陣列個數
 
     public static void createOriginalMembers(){
 
@@ -23,8 +20,9 @@ public class MyMemberlist {
             memberList.add(new Member("瑪麗", 18, "男", "企管"));
             initialFlag = 1;
         }
-
-
     }
+
+    public static List<Member> getMemberList(){return memberList;}
+
 
 }

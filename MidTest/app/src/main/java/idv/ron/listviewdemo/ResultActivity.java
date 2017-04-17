@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class ResultActivity extends AppCompatActivity {
     //private TextView tvResult;
     private TextView tvIndex;
@@ -28,8 +30,8 @@ public class ResultActivity extends AppCompatActivity {
         String sex = bundle.getString("sex");
         String major = bundle.getString("major");
         int position = bundle.getInt("position");
-
-        tvIndex.setText(position+"/"+MyMemberlist.getMemberListNum());
+        List<Member> memberList = MyMemberlist.getMemberList();
+        tvIndex.setText(position+"/"+memberList.size());
 
         EditText edName = (EditText) findViewById(R.id.edAddName);
         EditText edAge = (EditText) findViewById(R.id.edAddAge);
