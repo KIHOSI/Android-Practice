@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!--android:onClick="onAddClick"-->
+
+    <Button
+        android:text="@string/btSortByAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSortByAge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:text="@string/btSortByMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSortByMajor"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btSortByAge"
+        android:layout_toEndOf="@+id/btSortByAge" />
+
+    <Button
+        android:text="@string/btShowFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btShowFemale"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btShowMale"
+        android:layout_toLeftOf="@+id/btShowAll"
+        android:layout_toStartOf="@+id/btShowAll" />
+
+    <Button
+        android:text="@string/btShowAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btShowAll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAdd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <Button
+        android:text="@string/btShowMale"
+        android:layout_height="wrap_content"
+        android:id="@+id/btShowMale"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btSortByMajor"
+        android:layout_width="90px" />
+
+    <Button
+        android:text="@string/btDeleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btDeleteAll"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btAddExample"
+        android:layout_toStartOf="@+id/btAddExample"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:text="@string/btAddExample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btAddExample"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="@string/tvTitle"
+        android:layout_below="@+id/btAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <ListView
+        android:id="@+id/lvMember"
+        android:layout_width="match_parent"
+        android:layout_height="650px"
+        android:layout_above="@+id/btSortByAge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

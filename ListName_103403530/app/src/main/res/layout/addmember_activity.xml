@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:text="@string/tvAddDiagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/tvAddDiagram"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/tvAddTitile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAddDiagram"
+        android:layout_alignLeft="@+id/tvAddDiagram"
+        android:layout_alignStart="@+id/tvAddDiagram"
+        android:layout_marginTop="46dp"
+        android:id="@+id/tvAddTitle"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark" />
+
+
+    <TextView
+        android:text="@string/tvShowSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShowAge"
+        android:layout_alignRight="@+id/tvShowAge"
+        android:layout_alignEnd="@+id/tvShowAge"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tvShowSex" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edAddAge"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/tvShowAge"
+        android:layout_alignBottom="@+id/tvShowAge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edAddSex"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/tvShowSex"
+        android:layout_alignBottom="@+id/tvShowSex"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edAddMajor"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/tvShowMajor"
+        android:layout_alignBottom="@+id/tvShowMajor"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:text="@string/tvShowMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/tvShowMajor"
+        android:layout_below="@+id/edAddSex"
+        android:layout_alignLeft="@+id/tvShowSex"
+        android:layout_alignStart="@+id/tvShowSex" />
+
+    <TextView
+        android:text="@string/tvShowAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvShowAge"
+        android:layout_below="@+id/edAddName"
+        android:layout_alignLeft="@+id/tvShowName"
+        android:layout_alignStart="@+id/tvShowName" />
+
+    <TextView
+        android:text="@string/tvShowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvShowName"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/tvAddTitle"
+        android:layout_toLeftOf="@+id/tvAddTitle"
+        android:layout_toStartOf="@+id/tvAddTitle"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+
+    <Button
+        android:text="@string/btClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btBack"
+        android:layout_toLeftOf="@+id/tvAddTitle"
+        android:layout_toStartOf="@+id/tvAddTitle"
+        android:id="@+id/btClear" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edAddName"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/tvShowName"
+        android:layout_alignBottom="@+id/tvShowName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btBack"
+        android:layout_alignBaseline="@+id/btAddConfirm"
+        android:layout_alignBottom="@+id/btAddConfirm"
+        android:layout_alignLeft="@+id/edAddMajor"
+        android:layout_alignStart="@+id/edAddMajor" />
+
+    <Button
+        android:text="@string/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btAddConfirm"
+        android:layout_below="@+id/edAddMajor"
+        android:layout_toRightOf="@+id/btBack"
+        android:layout_toEndOf="@+id/btBack" />
+</RelativeLayout>

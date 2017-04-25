@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">103403530</string>
+    <string name="title_result_activity">ResultActivity</string>
+    <string name="title_addmember_activity">AddMemberActivity</string>
+    <string name="tvTitle">Membership Information</string>
+    <string name="btAdd">新增</string>
+    <string name="tvShowName">姓名:</string>
+    <string name="tvShowAge">年齡:</string>
+    <string name="tvShowSex">性別:</string>
+    <string name="tvShowMajor">系別:</string>
+    <string name="btBack">回主選單</string>
+    <string name="tvAddDiagram">新增畫面</string>
+    <string name="tvAddTitile">新增資料</string>
+    <string name="btDeleteAll">刪除全部資料</string>
+    <string name="btAddExample">新增範例</string>
+    <string name="btSortByAge">年齡排序</string>
+    <string name="btSortByMajor">系別排序</string>
+    <string name="btShowMale">男</string>
+    <string name="btShowFemale">女</string>
+    <string name="btShowAll">全部</string>
+    <string name="btFirstData">第一筆</string>
+    <string name="btLastData">最後一筆</string>
+    <string name="btClear">清除欄位</string>
+</resources>
